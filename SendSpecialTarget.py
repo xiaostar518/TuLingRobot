@@ -67,7 +67,7 @@ def get_current_chat_nickName(msg):
     if msg.fromUserName == userName:
         send_msg = get_response(msg['Text'])
         print(send_msg)
-        random_time = random.random() * 5 * 5
+        random_time = random.random() * 5 + 5
         time.sleep(random_time)
         send_special_friend_message(userName, send_msg)
 
